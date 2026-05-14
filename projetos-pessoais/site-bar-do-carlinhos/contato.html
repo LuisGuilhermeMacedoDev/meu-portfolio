@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Bar do Carlinhos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="index/Logo Bar do Carlinhos.jpg" alt="Logo do Bar do Carlinhos" class="logo">
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="comidas.html">Comidas</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="contato.html" class="active">Contato</a>
+            <a href="equipe.html">Equipe</a>
+        </nav>
+    </header>
+    <main class="container">
+        <h1>Fale Conosco</h1>
+        <section class="contato-info">
+            <h2>Nossas Informações</h2>
+            <p><strong>Endereço:</strong> St. Residencial Oeste / Vila Nossa Senhora de Fátima - Quadra E - Planaltina, DF</p>
+            <p><strong>Telefone:</strong> (61) 3388-4128</p>
+            <p><strong>Horário de Funcionamento:</strong> Seg-Qui (10h-21h) | Sex-Sáb (até 23h) | Dom (11h-21h)</p>
+        </section>
+        <section>
+            <h2>Mande uma Mensagem</h2>
+            <form class="formulario-contato">
+                <label for="nome">Seu Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                <label for="email">Seu Email:</label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required placeholder="Do que se trata a mensagem?">
+                <label for="mensagem">Sua Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required placeholder="Deixe sua dúvida, sugestão ou encomenda..."></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Bar do Carlinhos - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

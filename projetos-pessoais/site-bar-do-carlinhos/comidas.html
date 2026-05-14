@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio de Comidas - Bar do Carlinhos</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .item-cardapio {
+            display: flex;
+            align-items: center;
+            gap: 15px; 
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #333; 
+        }
+        .item-cardapio img {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            object-fit: cover; 
+        }
+        .item-info {
+            flex-grow: 1; 
+        }
+        .item-info strong {
+            font-size: 1.1em;
+        }
+        .item-info p {
+            margin: 5px 0 0 0;
+            color: #cccccc;
+            font-size: 0.9em;
+        }
+        .item-preco {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #FFD700; /* Cor do preço */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="index/Logo Bar do Carlinhos.jpg" alt="Logo do Bar do Carlinhos" class="logo">
+        </a>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="comidas.html" class="active">Comidas</a>
+            <a href="bebidas.html">Bebidas</a>
+            <a href="contato.html">Contato</a>
+            <a href="equipe.html">Equipe</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Nosso Cardápio de Comidas</h1>
+
+        <h2>Pratos do Dia</h2>
+
+        <div class="item-cardapio">
+            <img src="index/feijoada pequena.webp" alt="Foto da Feijoada">
+            <div class="item-info">
+                <strong>Feijoada - Refeição pequena</strong>
+                <p>Acompanha arroz, couve, farofa e laranja.</p>
+            </div>
+            <div class="item-preco">R$ 20,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/feijoada grande.jpg" alt="Foto da Feijoada">
+            <div class="item-info">
+                <strong>Feijoada - Refeição grande</strong>
+                <p>Acompanha arroz, couve, farofa e laranja.</p>
+            </div>
+            <div class="item-preco">R$ 25,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/peixe pequena.jpg" alt="Foto do Filé de Peixe Crocante">
+            <div class="item-info">
+                <strong>Filé de Peixe Crocante - Refeição pequena</strong>
+                <p>Acompanha arroz e salada fresca.</p>
+            </div>
+            <div class="item-preco">R$ 20,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/peixe grande.jpg" alt="Foto do Filé de Peixe Crocante">
+            <div class="item-info">
+                <strong>Filé de Peixe Crocante - Refeição grande</strong>
+                <p>Acompanha arroz e salada fresca.</p>
+            </div>
+            <div class="item-preco">R$ 25,00</div>
+        </div>
+
+        <h2>Porções</h2>
+
+        <div class="item-cardapio">
+            <img src="index/batata.jpg" alt="Foto da Bendita Batata à moda">
+            <div class="item-info">
+                <strong>Batata à moda</strong>
+                <p>Batata tradicional, bacon, cheddar ou muçarela. Serve 2 pessoas (600g)</p>
+            </div>
+            <div class="item-preco">R$ 33,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/carne de sol.webp" alt="Foto da Bendita Carne de sol">
+            <div class="item-info">
+                <strong>Carne de sol</strong>
+                <p>Carne de sol na chapa, mandioca, cebola e queijo muçarela. Serve 2 pessoas (550g)</p>
+            </div>
+            <div class="item-preco">R$ 75,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/costelinha de porco.avif" alt="Foto da Bendita costelinha suína">
+            <div class="item-info">
+                <strong>Costelinha suína</strong>
+                <p>Costelinha suína, batata tradicional, alface e molho barbecue. Serve 2 pessoas (700g)</p>
+            </div>
+            <div class="item-preco">R$ 55,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/tilapia.jpg" alt="Foto da Bendita filé de tilápia">
+            <div class="item-info">
+                <strong>Filé de tilápia</strong>
+                <p>Filé de tilápia, alface, limão, molho e pimenta de biquinho. Serve 2 pessoas (500g)</p>
+            </div>
+            <div class="item-preco">R$ 60,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/quibe.webp" alt="Foto do Bendito Quibe">
+            <div class="item-info">
+                <strong>Quibe</strong>
+                <p>12 Quibes de queijo e carne, limão e molho. Serve 2 pessoas</p>
+            </div>
+            <div class="item-preco">R$ 42,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/gourmet.jpg" alt="Foto do Bendito Sanduíche Gourmet">
+            <div class="item-info">
+                <strong>Sanduíche Gourmet</strong>
+                <p>Hambúrguer de 120g, ovo, tomate, alface e bacon.</p>
+            </div>
+            <div class="item-preco">R$ 22,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/torresmo.jpg" alt="Foto do Bendito Torresmo">
+            <div class="item-info">
+                <strong>Torresmo</strong>
+                <p>Torresmo, limão e pimenta de biquinho.</p>
+            </div>
+            <div class="item-preco">R$ 15,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/bolinho.jpg" alt="Foto do Bendito bolinho de bacalhau">
+            <div class="item-info">
+                <strong>Bolinho de bacalhau</strong>
+                <p>12 Bolinhos de bacalhau, alface, molho, limão e pimenta de biquinho. Serve 2 pessoas</p>
+            </div>
+            <div class="item-preco">R$ 50,00</div>
+        </div>
+
+        <div class="item-cardapio">
+            <img src="index/camarão.jpg" alt="Foto do Bendito camarão alho e óleo">
+            <div class="item-info">
+                <strong>Camarão alho e óleo</strong>
+                <p>Camarão alho e óleo, alface, molho e limão. Serve 2 pessoas (400g)</p>
+            </div>
+            <div class="item-preco">R$ 70,00</div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bar do Carlinhos - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
