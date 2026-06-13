@@ -1,20 +1,28 @@
-# Plano de Implantação: PortfolioHUB
+# Plano de Implantação e Arquitetura: PortfolioHUB
 
 ## 1. Visão Geral e Escopo
-O objetivo deste documento é detalhar o roteiro de implantação do PortfolioHUB, uma plataforma centralizada para exibição e gerenciamento de portfólios digitais. A infraestrutura garantirá alta disponibilidade, gestão de acesso rigorosa e versionamento seguro integrado ao GitHub.
+O **PortfolioHUB** é uma plataforma centralizada e escalável desenvolvida para a exibição, organização e gerenciamento de projetos de tecnologia. O escopo abrange desde projetos acadêmicos em Análise e Desenvolvimento de Sistemas até implementações web completas e infraestrutura em nuvem (como laboratórios AWS). O objetivo é garantir um ambiente de alta disponibilidade, versionamento seguro e processos automatizados.
 
-## 2. Configuração do Ambiente e Integração (GitHub)
-* **Ambiente de Homologação e Produção:** Utilização de branches separadas (`main` para produção e `develop` para testes).
-* **Integração:** Conexão direta das funcionalidades do GitHub para armazenamento seguro e versionamento dos códigos e ativos do projeto.
+## 2. Arquitetura e Stack Tecnológica
+A infraestrutura e o desenvolvimento da aplicação baseiam-se nos seguintes pilares:
+* **Frontend:** HTML5, CSS3, JavaScript.
+* **Backend e Scripts:** Java e Python (para automações e lógica de negócios).
+* **Infraestrutura e Nuvem:** Conceitos de Cloud Computing baseados na AWS Cloud Foundations, visando futura integração de CI/CD e hospedagem de aplicações multicamadas.
+* **Versionamento:** Git e GitHub.
 
-## 3. Gestão de Usuários e Políticas de Segurança
-* **Controle de Identidade:** Configuração de permissões de leitura e escrita baseadas no princípio do menor privilégio (RBAC).
-* **Políticas de Segurança (Guiadas pelo Gemini):** Implementação de regras de proteção de branch (Branch Protection Rules), exigência de revisões de código (Pull Requests) e bloqueio de commits diretos na `main` para garantir a conformidade do código.
+## 3. Configuração do Ambiente e Versionamento
+* **Repositório Central:** Estruturação modular com separação clara de domínios (`/projetos-pessoais`, `/projetos-academicos`).
+* **Estratégia de Branching:** Utilização de um fluxo baseado em *GitHub Flow*.
+  * `main`: Ambiente de produção, refletindo sempre o código estável e funcional.
+  * `feature/*`: Ramificações isoladas para desenvolvimento de novas funcionalidades ou adição de novos projetos.
 
-## 4. Compartilhamento e Controle de Acesso
-* **Colaboração:** Habilitação do repositório para integração contínua e controle de versão eficiente.
-* **Auditoria:** Documentação contínua do processo de configuração, garantindo que as práticas de colaboração fiquem registradas no repositório.
+## 4. Gestão de Usuários e Políticas de Segurança
+O ambiente foi configurado utilizando o modelo de controle de acesso baseado em funções (RBAC) e as ferramentas nativas de segurança do GitHub, orientadas por IA (Gemini):
+* **Proteção de Produção:** A branch `main` possui um *Ruleset* ativo que bloqueia commits diretos (Block force pushes).
+* **Revisão Obrigatória:** Toda alteração de código exige a abertura de um Pull Request (PR) prévio.
+* **Auditoria de Acesso:** Manutenção de logs de commit e histórico linear para garantir a rastreabilidade de todas as alterações feitas na base de código.
 
-## 5. Testes e Produção
-* **Validação (Guiada pelo Gemini):** Execução de testes de permissão e simulação de colaboração e acesso não autorizado.
-* **Lançamento:** Promoção do ambiente para produção e liberação para uso real.
+## 5. Testes e Validação
+1. **Validação de Acesso:** Simulação de tentativas de envio direto para a `main` para certificar o bloqueio por política de segurança.
+2. **Integração:** Testes de resolução de conflitos e validação de merge através de Pull Requests.
+3. **Auditoria Documental:** Revisão dos guias de contribuição e arquivos README.md para garantir conformidade com as exigências do projeto.
